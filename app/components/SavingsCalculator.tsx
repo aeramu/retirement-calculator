@@ -118,7 +118,7 @@ export function SavingsCalculator({ inputs, updateInput }: SavingsCalculatorProp
               <h4 className="font-semibold mb-2">Financial Independence, Retire Early (FIRE)</h4>
               <ul className="flex flex-col gap-1 list-disc list-inside">
                 <li><strong>What it is:</strong> A strategy to achieve complete financial independence from work by building enough wealth to live indefinitely</li>
-                <li><strong>Philosophy:</strong> Live off the "interest" forever while preserving your wealth</li>
+                <li><strong>Philosophy:</strong> Live off the &quot;interest&quot; forever while preserving your wealth</li>
                 <li><strong>Benefit:</strong> Financial security even if you live much longer than expected</li>
                 <li><strong>Trade-off:</strong> Requires more savings but offers maximum safety and potential inheritance</li>
               </ul>
@@ -141,7 +141,7 @@ export function SavingsCalculator({ inputs, updateInput }: SavingsCalculatorProp
               <ul className="flex flex-col gap-1 list-disc list-inside">
                 <li><strong>What it is:</strong> A strategy to spend all your wealth during your lifetime, ending with zero dollars at death</li>
                 <li><strong>Philosophy:</strong> Maximize your life experiences by using all available resources during your lifetime</li>
-                <li><strong>Benefit:</strong> Allows for higher spending in retirement since you're not preserving wealth</li>
+                <li><strong>Benefit:</strong> Allows for higher spending in retirement since you&apos;re not preserving wealth</li>
                 <li><strong>Trade-off:</strong> Requires less savings but carries risk if you live longer than expected</li>
               </ul>
             </div>

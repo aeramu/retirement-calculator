@@ -33,7 +33,7 @@ export function ResultsSummary({ retirementAssets, finalAssets, inputs }: Result
                     </span>
                 </div>
                 <div className="flex justify-between pl-4">
-                    <span className="text-sm text-gray-500 dark:text-gray-500">In today's values:</span>
+                    <span className="text-sm text-gray-500 dark:text-gray-500">In today&apos;s values:</span>
                     <span className="text-sm text-gray-500 dark:text-gray-500">
                         {formatCurrency(todaysValueOfRetirementAssets)}
                     </span>

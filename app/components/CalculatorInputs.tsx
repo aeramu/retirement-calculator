@@ -1,6 +1,6 @@
 'use client'
 
-import { DollarSign, Calendar, CalendarDays, ChevronDown, ChevronRight } from 'lucide-react'
+import { DollarSign, ChevronDown, ChevronRight } from 'lucide-react'
 import { CalculatorInputs as InputsType } from '../types'
 import { formatNumber, parseNumber, formatAge, parseAge, parsePercentage } from '../utils/formatters'
 import { InputModeToggle } from './InputModeToggle'
@@ -256,7 +256,7 @@ export function CalculatorInputs({ inputs, updateInput }: CalculatorInputsProps)
 
             <div className="mt-2 p-2 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
               <p className="text-xs text-blue-700 dark:text-blue-300">
-                <strong>Note:</strong> This partial income is <strong>not applicable to FIRE calculations</strong>. FIRE Philosophy requires having enough assets to sustain you indefinitely, even in the worst-case scenario. Since partial income may stop, the FIRE calculation ensures you can cover full expenses from your assets alone. This guarantees true independence where you don't need to rely on any external income sources.
+                <strong>Note:</strong> This partial income is <strong>not applicable to FIRE calculations</strong>. FIRE Philosophy requires having enough assets to sustain you indefinitely, even in the worst-case scenario. Since partial income may stop, the FIRE calculation ensures you can cover full expenses from your assets alone. This guarantees true independence where you don&apos;t need to rely on any external income sources.
               </p>
             </div>
           </div>
