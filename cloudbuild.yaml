@@ -1,0 +1,12 @@
+steps:
+  - name: 'gcr.io/kaniko-project/executor:latest'
+    args:
+      - '--cache=true'
+      - '--custom-platform=linux/amd64'
+      - '--destination=${_DOCKER_REPO}/${_SERVICE_NAME}:${COMMIT_SHA}'
+      - '--destination=${_DOCKER_REPO}/${_SERVICE_NAME}:latest'
+
+timeout: '1200s'
+options:
+  logging: CLOUD_LOGGING_ONLY
+  machineType: 'E2_HIGHCPU_8'
