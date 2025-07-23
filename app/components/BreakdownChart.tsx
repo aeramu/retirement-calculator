@@ -1,5 +1,6 @@
 'use client'
 
+import { memo } from 'react'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 import { YearData } from '../types'
 import { formatCurrency, formatCompactCurrency } from '../utils/formatters'
@@ -8,7 +9,7 @@ interface BreakdownChartProps {
   data: YearData[]
 }
 
-export function BreakdownChart({ data }: BreakdownChartProps) {
+function BreakdownChartComponent({ data }: BreakdownChartProps) {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
       <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
@@ -44,4 +45,6 @@ export function BreakdownChart({ data }: BreakdownChartProps) {
       </div>
     </div>
   )
-} 
+}
+
+export const BreakdownChart = memo(BreakdownChartComponent)

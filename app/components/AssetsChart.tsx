@@ -1,6 +1,7 @@
 'use client'
 
 import { Calendar } from 'lucide-react'
+import { memo } from 'react'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 import { YearData } from '../types'
 import { formatCurrency, formatCompactCurrency } from '../utils/formatters'
@@ -9,7 +10,7 @@ interface AssetsChartProps {
     data: YearData[]
 }
 
-export function AssetsChart({ data }: AssetsChartProps) {
+function AssetsChartComponent({ data }: AssetsChartProps) {
     return (
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
             <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4 flex items-center">
@@ -46,4 +47,6 @@ export function AssetsChart({ data }: AssetsChartProps) {
             </div>
         </div>
     )
-} 
+}
+
+export const AssetsChart = memo(AssetsChartComponent)
